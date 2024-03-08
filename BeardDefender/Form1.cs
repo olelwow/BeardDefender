@@ -6,5 +6,10 @@ namespace BeardDefender
         {
             InitializeComponent();
         }
+
+        private void menu_bg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
