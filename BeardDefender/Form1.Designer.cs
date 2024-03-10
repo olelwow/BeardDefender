@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btn_startGame = new Button();
             btn_scoreBoard = new Button();
             btn_quit = new Button();
             pictureBox1 = new PictureBox();
+            imgList_buttonImages = new ImageList(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -70,12 +73,21 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.BeardDefender;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, -3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1792, 1024);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            // 
+            // imgList_buttonImages
+            // 
+            imgList_buttonImages.ColorDepth = ColorDepth.Depth32Bit;
+            imgList_buttonImages.ImageStream = (ImageListStreamer)resources.GetObject("imgList_buttonImages.ImageStream");
+            imgList_buttonImages.TransparentColor = Color.Transparent;
+            imgList_buttonImages.Images.SetKeyName(0, "Play.png");
+            imgList_buttonImages.Images.SetKeyName(1, "HighScore12.png");
+            imgList_buttonImages.Images.SetKeyName(2, "Quit.png");
             // 
             // Form1
             // 
@@ -98,5 +110,6 @@
         private Button btn_scoreBoard;
         private Button btn_quit;
         private PictureBox pictureBox1;
+        private ImageList imgList_buttonImages;
     }
 }
