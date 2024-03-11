@@ -33,7 +33,14 @@ namespace BeardDefender
 
         }
 
-
+        // Play knapp 
+        private void Btn_Play_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var levelOne = new GameLevel();
+            levelOne.FormClosed += (s, args) => this.Close();
+            levelOne.Show();
+        }
         private void Btn_Play_MouseHover_1(object sender, EventArgs e)
         {
 
@@ -56,6 +63,11 @@ namespace BeardDefender
             Btn_Play.ForeColor = Color.Black;
         }
 
+        // Highscore knapp 
+        private void Btn_HighScore_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Btn_HighScore_MouseHover(object sender, EventArgs e)
         {
             Btn_HighScore.ForeColor = Color.Red;
@@ -77,6 +89,7 @@ namespace BeardDefender
             Btn_HighScore.ForeColor = Color.Black;
         }
 
+        // Exit knapp 
         private void Btn_exitGame_MouseHover(object sender, EventArgs e)
         {
 
@@ -98,5 +111,6 @@ namespace BeardDefender
             Btn_exitGame.ForeColor = Color.Black;
         }
 
+        
     }
 }
