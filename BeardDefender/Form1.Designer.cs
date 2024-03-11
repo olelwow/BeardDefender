@@ -76,11 +76,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1774, 977);
+            pictureBox1.Size = new Size(1920, 1080);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
@@ -97,7 +97,7 @@
             // 
             Btn_Play.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_Play.Image = (Image)resources.GetObject("Btn_Play.Image");
-            Btn_Play.Location = new Point(821, 524);
+            Btn_Play.Location = new Point(884, 562);
             Btn_Play.Name = "Btn_Play";
             Btn_Play.Size = new Size(209, 88);
             Btn_Play.TabIndex = 1;
@@ -110,7 +110,7 @@
             // 
             Btn_HighScore.Font = new Font("Stencil", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_HighScore.Image = (Image)resources.GetObject("Btn_HighScore.Image");
-            Btn_HighScore.Location = new Point(770, 680);
+            Btn_HighScore.Location = new Point(837, 722);
             Btn_HighScore.Name = "Btn_HighScore";
             Btn_HighScore.Size = new Size(292, 73);
             Btn_HighScore.TabIndex = 2;
@@ -123,7 +123,7 @@
             // 
             Btn_exitGame.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_exitGame.Image = (Image)resources.GetObject("Btn_exitGame.Image");
-            Btn_exitGame.Location = new Point(770, 827);
+            Btn_exitGame.Location = new Point(837, 877);
             Btn_exitGame.Name = "Btn_exitGame";
             Btn_exitGame.Size = new Size(292, 76);
             Btn_exitGame.TabIndex = 3;
@@ -134,9 +134,8 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1774, 977);
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1902, 1033);
             Controls.Add(Btn_exitGame);
             Controls.Add(Btn_HighScore);
             Controls.Add(Btn_Play);
@@ -144,8 +143,8 @@
             Controls.Add(btn_quit);
             Controls.Add(btn_startGame);
             Controls.Add(btn_scoreBoard);
-            MaximumSize = new Size(1792, 1024);
-            MinimumSize = new Size(1792, 1024);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(1792, 1018);
             Name = "Form1";
             Text = "Beard Defender";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
