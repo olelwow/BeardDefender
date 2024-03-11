@@ -76,10 +76,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, -3);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1792, 1024);
+            pictureBox1.Size = new Size(1774, 977);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
@@ -143,6 +144,8 @@
             Controls.Add(btn_quit);
             Controls.Add(btn_startGame);
             Controls.Add(btn_scoreBoard);
+            MaximumSize = new Size(1792, 1024);
+            MinimumSize = new Size(1792, 1024);
             Name = "Form1";
             Text = "Beard Defender";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
