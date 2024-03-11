@@ -30,9 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            btn_startGame = new Button();
-            btn_scoreBoard = new Button();
-            btn_quit = new Button();
             pictureBox1 = new PictureBox();
             imgList_buttonImages = new ImageList(components);
             Btn_Play = new Button();
@@ -41,43 +38,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // btn_startGame
-            // 
-            btn_startGame.BackColor = SystemColors.ActiveCaption;
-            btn_startGame.Font = new Font("Segoe UI", 30F);
-            btn_startGame.Location = new Point(362, 252);
-            btn_startGame.Name = "btn_startGame";
-            btn_startGame.Size = new Size(303, 84);
-            btn_startGame.TabIndex = 0;
-            btn_startGame.Text = "Start Game";
-            btn_startGame.UseVisualStyleBackColor = false;
-            // 
-            // btn_scoreBoard
-            // 
-            btn_scoreBoard.BackColor = SystemColors.ActiveCaption;
-            btn_scoreBoard.Font = new Font("Segoe UI", 30F);
-            btn_scoreBoard.Location = new Point(362, 136);
-            btn_scoreBoard.Name = "btn_scoreBoard";
-            btn_scoreBoard.Size = new Size(303, 84);
-            btn_scoreBoard.TabIndex = 1;
-            btn_scoreBoard.Text = "Scoreboard";
-            btn_scoreBoard.UseVisualStyleBackColor = false;
-            // 
-            // btn_quit
-            // 
-            btn_quit.BackColor = SystemColors.ActiveCaption;
-            btn_quit.Font = new Font("Segoe UI", 30F);
-            btn_quit.Location = new Point(362, 370);
-            btn_quit.Name = "btn_quit";
-            btn_quit.Size = new Size(303, 84);
-            btn_quit.TabIndex = 2;
-            btn_quit.Text = "Quit";
-            btn_quit.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(1, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1920, 1080);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -103,6 +67,7 @@
             Btn_Play.TabIndex = 1;
             Btn_Play.Text = "PLAY!";
             Btn_Play.UseVisualStyleBackColor = true;
+            Btn_Play.Click += Btn_Play_Click;
             Btn_Play.MouseLeave += Btn_Play_MouseLeave;
             Btn_Play.MouseHover += Btn_Play_MouseHover_1;
             // 
@@ -116,6 +81,7 @@
             Btn_HighScore.TabIndex = 2;
             Btn_HighScore.Text = "HIGHSCORE";
             Btn_HighScore.UseVisualStyleBackColor = true;
+            Btn_HighScore.Click += Btn_HighScore_Click;
             Btn_HighScore.MouseLeave += Btn_HighScore_MouseLeave;
             Btn_HighScore.MouseHover += Btn_HighScore_MouseHover;
             // 
@@ -140,22 +106,16 @@
             Controls.Add(Btn_HighScore);
             Controls.Add(Btn_Play);
             Controls.Add(pictureBox1);
-            Controls.Add(btn_quit);
-            Controls.Add(btn_startGame);
-            Controls.Add(btn_scoreBoard);
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(1792, 1018);
             Name = "Form1";
             Text = "Beard Defender";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button btn_startGame;
-        private Button btn_scoreBoard;
-        private Button btn_quit;
         private PictureBox pictureBox1;
         private ImageList imgList_buttonImages;
         private Button Btn_Play;

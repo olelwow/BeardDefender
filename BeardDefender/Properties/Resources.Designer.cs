@@ -10,9 +10,8 @@
 
 namespace BeardDefender.Properties {
     using System;
-    using System.Drawing;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -32,9 +31,7 @@ namespace BeardDefender.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
-        public static Image PlayHover { get; internal set; }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -69,6 +66,26 @@ namespace BeardDefender.Properties {
         internal static System.Drawing.Bitmap BeardDefender {
             get {
                 object obj = ResourceManager.GetObject("BeardDefender", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game_bg {
+            get {
+                object obj = ResourceManager.GetObject("game_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lose_icon {
+            get {
+                object obj = ResourceManager.GetObject("lose_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
