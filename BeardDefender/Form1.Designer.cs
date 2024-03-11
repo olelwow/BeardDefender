@@ -35,6 +35,9 @@
             btn_quit = new Button();
             pictureBox1 = new PictureBox();
             imgList_buttonImages = new ImageList(components);
+            Btn_Play = new Button();
+            Btn_HighScore = new Button();
+            Btn_exitGame = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -89,11 +92,53 @@
             imgList_buttonImages.Images.SetKeyName(1, "HighScore12.png");
             imgList_buttonImages.Images.SetKeyName(2, "Quit.png");
             // 
+            // Btn_Play
+            // 
+            Btn_Play.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_Play.Image = (Image)resources.GetObject("Btn_Play.Image");
+            Btn_Play.Location = new Point(821, 524);
+            Btn_Play.Name = "Btn_Play";
+            Btn_Play.Size = new Size(209, 88);
+            Btn_Play.TabIndex = 1;
+            Btn_Play.Text = "PLAY!";
+            Btn_Play.UseVisualStyleBackColor = true;
+            Btn_Play.MouseLeave += Btn_Play_MouseLeave;
+            Btn_Play.MouseHover += Btn_Play_MouseHover_1;
+            // 
+            // Btn_HighScore
+            // 
+            Btn_HighScore.Font = new Font("Stencil", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_HighScore.Image = (Image)resources.GetObject("Btn_HighScore.Image");
+            Btn_HighScore.Location = new Point(770, 680);
+            Btn_HighScore.Name = "Btn_HighScore";
+            Btn_HighScore.Size = new Size(292, 73);
+            Btn_HighScore.TabIndex = 2;
+            Btn_HighScore.Text = "HIGHSCORE";
+            Btn_HighScore.UseVisualStyleBackColor = true;
+            Btn_HighScore.MouseLeave += Btn_HighScore_MouseLeave;
+            Btn_HighScore.MouseHover += Btn_HighScore_MouseHover;
+            // 
+            // Btn_exitGame
+            // 
+            Btn_exitGame.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_exitGame.Image = (Image)resources.GetObject("Btn_exitGame.Image");
+            Btn_exitGame.Location = new Point(770, 827);
+            Btn_exitGame.Name = "Btn_exitGame";
+            Btn_exitGame.Size = new Size(292, 76);
+            Btn_exitGame.TabIndex = 3;
+            Btn_exitGame.Text = "EXIT GAME";
+            Btn_exitGame.UseVisualStyleBackColor = true;
+            Btn_exitGame.MouseLeave += Btn_exitGame_MouseLeave;
+            Btn_exitGame.MouseHover += Btn_exitGame_MouseHover;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1774, 977);
+            Controls.Add(Btn_exitGame);
+            Controls.Add(Btn_HighScore);
+            Controls.Add(Btn_Play);
             Controls.Add(pictureBox1);
             Controls.Add(btn_quit);
             Controls.Add(btn_startGame);
@@ -111,5 +156,8 @@
         private Button btn_quit;
         private PictureBox pictureBox1;
         private ImageList imgList_buttonImages;
+        private Button Btn_Play;
+        private Button Btn_HighScore;
+        private Button Btn_exitGame;
     }
 }
