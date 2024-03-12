@@ -65,7 +65,10 @@ namespace BeardDefender
         // Highscore knapp 
         private void Btn_HighScore_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var highScore = new HighScoreScreen();
+            highScore.FormClosed += (s, args) => this.Close();
+            highScore.Show();
         }
         private void Btn_HighScore_MouseHover(object sender, EventArgs e)
         {
@@ -89,6 +92,17 @@ namespace BeardDefender
         }
 
         // Exit knapp 
+        private void Btn_exitGame_Click(object sender, EventArgs e)
+        {
+            var exitGame = MessageBox.Show("Are you sure you want to exit the game?",
+                                           "Exit game",
+                                           MessageBoxButtons.OKCancel,
+                                           MessageBoxIcon.Question);
+            if (exitGame == DialogResult.OK)
+            {
+                this.Dispose();
+            }
+        }
         private void Btn_exitGame_MouseHover(object sender, EventArgs e)
         {
 
@@ -110,6 +124,6 @@ namespace BeardDefender
             Btn_exitGame.ForeColor = Color.Black;
         }
 
-        
+       
     }
 }

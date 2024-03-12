@@ -95,6 +95,7 @@
             Btn_exitGame.TabIndex = 3;
             Btn_exitGame.Text = "EXIT GAME";
             Btn_exitGame.UseVisualStyleBackColor = true;
+            Btn_exitGame.Click += Btn_exitGame_Click;
             Btn_exitGame.MouseLeave += Btn_exitGame_MouseLeave;
             Btn_exitGame.MouseHover += Btn_exitGame_MouseHover;
             // 
