@@ -23,8 +23,7 @@ namespace BeardDefender
             Btn_exitGame.GotFocus += Btn_exitGame_GotFocus;
             Btn_exitGame.LostFocus += Btn_exitGame_LostFocus;
 
-
-
+            //Btn_Play.Click += MenuButtons.Btn_Play_Click();
 
         }
 
