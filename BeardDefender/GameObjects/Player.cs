@@ -11,7 +11,11 @@ namespace BeardDefender.GameObjects
 
 
         private PictureBox pictureBox1;
-        private int speed = 5;
+        private System.Windows.Forms.Timer timer;
+        private System.ComponentModel.IContainer components;
+        public int startingSpeed = 5;
+        private int speed;
+        private int score;
 
         private void InitializeComponent()
         {
@@ -25,9 +29,8 @@ namespace BeardDefender.GameObjects
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(-31, -22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(77, 115);
             pictureBox1.TabIndex = 0;
@@ -45,7 +48,7 @@ namespace BeardDefender.GameObjects
             BackColor = Color.Transparent;
             Controls.Add(pictureBox1);
             Name = "Player";
-            Size = new Size(77, 115);
+            Size = new Size(44, 83);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -53,11 +56,8 @@ namespace BeardDefender.GameObjects
         public Player()
         {
             InitializeComponent();
+            speed = startingSpeed;
         }
-
-        private System.Windows.Forms.Timer timer;
-        private System.ComponentModel.IContainer components;
-
         private void Update(object sender, EventArgs e)
         {
             var screenHeight = ClientSize.Height;
@@ -79,6 +79,18 @@ namespace BeardDefender.GameObjects
                 Left += speed;
             }
         }
+
+        public int Score
+        {
+            get { return this.score; }
+            set { this.score = value; }
+        }
+        public int Speed
+        {
+            get { return this.speed; }
+            set { this.speed = value; }
+        }
+        
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

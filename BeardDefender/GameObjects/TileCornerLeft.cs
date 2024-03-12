@@ -22,9 +22,9 @@ namespace BeardDefender.GameObjects
             // 
             pictureBox1.BackgroundImage = Properties.Resources.Vänster_hörn1;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(159, 0);
+            pictureBox1.Location = new Point(-1779, -706);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(987, 649);
+            pictureBox1.Size = new Size(1873, 858);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -33,7 +33,7 @@ namespace BeardDefender.GameObjects
             BackColor = Color.Transparent;
             Controls.Add(pictureBox1);
             Name = "TileCornerLeft";
-            Size = new Size(1365, 584);
+            Size = new Size(71, 70);
             Tag = "object";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
