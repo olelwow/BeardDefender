@@ -23,7 +23,7 @@ namespace BeardDefender.GameObjects
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.lose_icon;
-            pictureBox1.Location = new Point(0, 3);
+            pictureBox1.Location = new Point(1, 1);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 0;

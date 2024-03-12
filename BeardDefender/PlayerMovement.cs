@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeardDefender
 {
-    public class PlayerMovement
+    public abstract class PlayerMovement
     {
         public readonly static Keys KeyUp = Keys.W;
         public readonly static Keys KeyDown = Keys.S;
@@ -17,5 +17,45 @@ namespace BeardDefender
         public static bool IsDown = false;
         public static bool IsLeft = false;
         public static bool IsRight = false;
+
+        public static void OnKeyDownMove(KeyEventArgs e)
+        {
+            if (e.KeyCode == PlayerMovement.KeyUp)
+            {
+                PlayerMovement.IsUp = true;
+            }
+            if (e.KeyCode == PlayerMovement.KeyDown)
+            {
+                PlayerMovement.IsDown = true;
+            }
+            if (e.KeyCode == PlayerMovement.KeyRight)
+            {
+                PlayerMovement.IsRight = true;
+            }
+            if (e.KeyCode == PlayerMovement.KeyLeft)
+            {
+                PlayerMovement.IsLeft = true;
+            }
+        }
+
+        public static void OnKeyUpMove(KeyEventArgs e)
+        {
+            if (e.KeyCode == PlayerMovement.KeyUp)
+            {
+                PlayerMovement.IsUp = false;
+            }
+            if (e.KeyCode == PlayerMovement.KeyDown)
+            {
+                PlayerMovement.IsDown = false;
+            }
+            if (e.KeyCode == PlayerMovement.KeyRight)
+            {
+                PlayerMovement.IsRight = false;
+            }
+            if (e.KeyCode == PlayerMovement.KeyLeft)
+            {
+                PlayerMovement.IsLeft = false;
+            }
+        }
     }
 }

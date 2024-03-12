@@ -36,15 +36,15 @@
             // Ground
             // 
             Ground.BackColor = Color.Tan;
-            Ground.Location = new Point(-10, 930);
+            Ground.Location = new Point(-41, 930);
             Ground.Name = "Ground";
-            Ground.Size = new Size(1922, 103);
+            Ground.Size = new Size(1970, 120);
             Ground.TabIndex = 1;
             Ground.TabStop = false;
             // 
             // player1
             // 
-            player1.Location = new Point(74, 821);
+            player1.Location = new Point(92, 814);
             player1.Name = "player1";
             player1.Size = new Size(57, 48);
             player1.TabIndex = 2;
