@@ -103,6 +103,26 @@ namespace BeardDefender.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HIghScore {
+            get {
+                object obj = ResourceManager.GetObject("HIghScore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap highscore_screen {
+            get {
+                object obj = ResourceManager.GetObject("highscore_screen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Jump_Left {
             get {
                 object obj = ResourceManager.GetObject("Jump-Left", resourceCulture);
@@ -146,6 +166,16 @@ namespace BeardDefender.Properties {
         internal static System.Drawing.Bitmap Run_Right {
             get {
                 object obj = ResourceManager.GetObject("Run-Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TransparentWorkaround {
+            get {
+                object obj = ResourceManager.GetObject("TransparentWorkaround", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
