@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeardDefender.GameObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -19,8 +20,9 @@ namespace BeardDefender
         public static bool IsLeft = false;
         public static bool IsRight = false;
 
-        public static void OnKeyDownMove(KeyEventArgs e)
+        public static void OnKeyDownMove(KeyEventArgs e, Player player)
         {
+            player.Speed = player.startingSpeed;
             if (e.KeyCode == PlayerMovement.KeyUp)
             {
                 PlayerMovement.IsUp = true;
@@ -37,8 +39,6 @@ namespace BeardDefender
             {
                 PlayerMovement.IsLeft = true;
             }
-
-            
         }
 
         public static void OnKeyUpMove(KeyEventArgs e)

@@ -34,7 +34,9 @@
             Highscore_Grid = new DataGridView();
             Player_Column = new DataGridViewTextBoxColumn();
             Score_Column = new DataGridViewTextBoxColumn();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)Highscore_Grid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Highscore_Grid
@@ -51,7 +53,7 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             Highscore_Grid.DefaultCellStyle = dataGridViewCellStyle3;
-            Highscore_Grid.Location = new Point(1239, 220);
+            Highscore_Grid.Location = new Point(1274, 236);
             Highscore_Grid.Name = "Highscore_Grid";
             Highscore_Grid.ReadOnly = true;
             Highscore_Grid.Size = new Size(504, 295);
@@ -77,20 +79,31 @@
             Score_Column.Resizable = DataGridViewTriState.False;
             Score_Column.Width = 230;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.highscore_screen;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(5, 6);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1920, 1080);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // HighScoreScreen
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Black;
-            BackgroundImage = Properties.Resources.highscore_screen;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
             Controls.Add(Highscore_Grid);
+            Controls.Add(pictureBox1);
             DoubleBuffered = true;
             MaximumSize = new Size(1920, 1080);
             Name = "HighScoreScreen";
             Text = "High Scores";
             WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)Highscore_Grid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -99,5 +112,6 @@
         private DataGridView Highscore_Grid;
         private DataGridViewTextBoxColumn Player_Column;
         private DataGridViewTextBoxColumn Score_Column;
+        private PictureBox pictureBox1;
     }
 }
