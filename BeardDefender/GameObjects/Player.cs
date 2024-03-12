@@ -11,12 +11,12 @@ namespace BeardDefender.GameObjects
 
 
         private PictureBox pictureBox1;
-        private int speed = 100;
-        
+        private int speed = 5;
+
         private void InitializeComponent()
         {
-            
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Player));
             pictureBox1 = new PictureBox();
             timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -24,10 +24,12 @@ namespace BeardDefender.GameObjects
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.lose_icon;
-            pictureBox1.Location = new Point(1, 1);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(77, 115);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -40,9 +42,10 @@ namespace BeardDefender.GameObjects
             // 
             // Player
             // 
+            BackColor = Color.Transparent;
             Controls.Add(pictureBox1);
             Name = "Player";
-            Size = new Size(101, 54);
+            Size = new Size(77, 115);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

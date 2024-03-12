@@ -30,9 +30,10 @@ namespace BeardDefender.GameObjects
             // 
             // Ground
             // 
+            BackColor = Color.Transparent;
             Controls.Add(pictureBox1);
             Name = "Ground";
-            Size = new Size(842, 105);
+            Size = new Size(866, 105);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

@@ -36,13 +36,15 @@
             // 
             // player1
             // 
-            player1.Location = new Point(12, 923);
+            player1.BackColor = Color.Transparent;
+            player1.Location = new Point(339, 864);
             player1.Name = "player1";
-            player1.Size = new Size(57, 48);
+            player1.Size = new Size(94, 99);
             player1.TabIndex = 2;
             // 
             // ground1
             // 
+            ground1.BackColor = Color.Transparent;
             ground1.Location = new Point(-9, 963);
             ground1.Name = "ground1";
             ground1.Size = new Size(837, 100);
@@ -50,17 +52,20 @@
             // 
             // tileCornerLeft1
             // 
-            tileCornerLeft1.Location = new Point(805, 894);
+            tileCornerLeft1.BackColor = Color.Transparent;
+            tileCornerLeft1.Location = new Point(613, 933);
             tileCornerLeft1.Name = "tileCornerLeft1";
             tileCornerLeft1.Size = new Size(23, 24);
             tileCornerLeft1.TabIndex = 4;
+            tileCornerLeft1.Tag = "object";
             // 
             // groundTileFlat11
             // 
-            groundTileFlat11.Location = new Point(866, 894);
+            groundTileFlat11.Location = new Point(151, 943);
             groundTileFlat11.Name = "groundTileFlat11";
             groundTileFlat11.Size = new Size(23, 26);
             groundTileFlat11.TabIndex = 5;
+            groundTileFlat11.Tag = "object";
             // 
             // GameLevel
             // 
@@ -68,10 +73,10 @@
             BackgroundImage = Properties.Resources.game_bg;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(player1);
             Controls.Add(groundTileFlat11);
             Controls.Add(tileCornerLeft1);
             Controls.Add(ground1);
-            Controls.Add(player1);
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(1792, 1018);
             Name = "GameLevel";
