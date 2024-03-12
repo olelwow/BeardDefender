@@ -40,7 +40,7 @@ namespace BeardDefender
 
         public static void OnKeyUpMove(KeyEventArgs e)
         {
-            if (e.KeyCode == PlayerMovement.KeyUp)
+            if (e.KeyCode == PlayerMovement.KeyUp )
             {
                 PlayerMovement.IsUp = false;
             }

@@ -28,26 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Ground = new PictureBox();
             player1 = new GameObjects.Player();
-            ((System.ComponentModel.ISupportInitialize)Ground).BeginInit();
+            ground1 = new GameObjects.Ground();
+            tileCornerLeft1 = new GameObjects.TileCornerLeft();
+            groundTileFlat11 = new GameObjects.GroundTileFlat1();
             SuspendLayout();
-            // 
-            // Ground
-            // 
-            Ground.BackColor = Color.Tan;
-            Ground.Location = new Point(-41, 930);
-            Ground.Name = "Ground";
-            Ground.Size = new Size(1970, 120);
-            Ground.TabIndex = 1;
-            Ground.TabStop = false;
             // 
             // player1
             // 
-            player1.Location = new Point(92, 814);
+            player1.Location = new Point(12, 923);
             player1.Name = "player1";
             player1.Size = new Size(57, 48);
             player1.TabIndex = 2;
+            // 
+            // ground1
+            // 
+            ground1.Location = new Point(-9, 963);
+            ground1.Name = "ground1";
+            ground1.Size = new Size(837, 100);
+            ground1.TabIndex = 3;
+            // 
+            // tileCornerLeft1
+            // 
+            tileCornerLeft1.Location = new Point(805, 894);
+            tileCornerLeft1.Name = "tileCornerLeft1";
+            tileCornerLeft1.Size = new Size(23, 24);
+            tileCornerLeft1.TabIndex = 4;
+            // 
+            // groundTileFlat11
+            // 
+            groundTileFlat11.Location = new Point(866, 894);
+            groundTileFlat11.Name = "groundTileFlat11";
+            groundTileFlat11.Size = new Size(23, 26);
+            groundTileFlat11.TabIndex = 5;
             // 
             // GameLevel
             // 
@@ -55,8 +68,10 @@
             BackgroundImage = Properties.Resources.game_bg;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(groundTileFlat11);
+            Controls.Add(tileCornerLeft1);
+            Controls.Add(ground1);
             Controls.Add(player1);
-            Controls.Add(Ground);
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(1792, 1018);
             Name = "GameLevel";
@@ -65,12 +80,13 @@
             Load += GameLevel_Load;
             KeyDown += OnKeyDown;
             KeyUp += OnKeyUp;
-            ((System.ComponentModel.ISupportInitialize)Ground).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private PictureBox Ground;
         private GameObjects.Player player1;
+        private GameObjects.Ground ground1;
+        private GameObjects.TileCornerLeft tileCornerLeft1;
+        private GameObjects.GroundTileFlat1 groundTileFlat11;
     }
 }
