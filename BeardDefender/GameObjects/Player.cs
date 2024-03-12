@@ -28,6 +28,7 @@ namespace BeardDefender.GameObjects
             pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // timer
             // 
@@ -70,6 +71,11 @@ namespace BeardDefender.GameObjects
             {
                 Left += speed;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
