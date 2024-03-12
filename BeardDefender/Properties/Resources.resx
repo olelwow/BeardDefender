@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="game_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game_bg.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Idle-Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idle-Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Run-LEFT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Run-LEFT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Idle-Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Idle-Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Duck-Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Duck-Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,16 +142,40 @@
   <data name="Jump-Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jump-Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Duck-Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Duck-Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="game_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game_bg.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jump-Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Jump-Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Idle-Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Idle-Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Duck-Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duck-Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Idle-Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Idle-Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ground 10tiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ground 10tiles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Höger hörn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Höger hörn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Höger nedåt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Höger nedåt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inre jord 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inre jord 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inre Jord1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inre Jord1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plan mark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plan mark1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vänster Botten hörn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vänster Botten hörn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vänster hörn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vänster hörn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vänster nedåt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vänster nedåt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
