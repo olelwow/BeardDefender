@@ -103,6 +103,36 @@ namespace BeardDefender.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ground_10tiles {
+            get {
+                object obj = ResourceManager.GetObject("ground 10tiles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Höger_hörn {
+            get {
+                object obj = ResourceManager.GetObject("Höger hörn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Höger_nedåt {
+            get {
+                object obj = ResourceManager.GetObject("Höger nedåt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Idle_Left {
             get {
                 object obj = ResourceManager.GetObject("Idle-Left", resourceCulture);
@@ -116,6 +146,26 @@ namespace BeardDefender.Properties {
         internal static System.Drawing.Bitmap Idle_Right {
             get {
                 object obj = ResourceManager.GetObject("Idle-Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inre_jord_2 {
+            get {
+                object obj = ResourceManager.GetObject("inre jord 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inre_Jord1 {
+            get {
+                object obj = ResourceManager.GetObject("inre Jord1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +203,16 @@ namespace BeardDefender.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Plan_mark1 {
+            get {
+                object obj = ResourceManager.GetObject("Plan mark1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Run_LEFT {
             get {
                 object obj = ResourceManager.GetObject("Run-LEFT", resourceCulture);
@@ -166,6 +226,36 @@ namespace BeardDefender.Properties {
         internal static System.Drawing.Bitmap Run_Right {
             get {
                 object obj = ResourceManager.GetObject("Run-Right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vänster_Botten_hörn {
+            get {
+                object obj = ResourceManager.GetObject("Vänster Botten hörn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vänster_hörn1 {
+            get {
+                object obj = ResourceManager.GetObject("Vänster hörn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vänster_nedåt1 {
+            get {
+                object obj = ResourceManager.GetObject("Vänster nedåt1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
