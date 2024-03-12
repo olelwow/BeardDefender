@@ -1,4 +1,5 @@
 ﻿
+using BeardDefender.GameObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +17,31 @@ namespace BeardDefender
         public GameLevel()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
         }
 
         private void OnKeyDown(object sender, KeyEventArgs e)
         {
             PlayerMovement.OnKeyDownMove(e);
+            foreach (Control x in this.Controls)
+            {
+                if ( (string)x.Tag == "object")
+                {
+                    if (player1.Bounds.IntersectsWith(x.Bounds))
+                    {                        
+                        PlayerMovement.IsRight = false;
+                        
+                        break;
+                    }
+                    if (player1.Bounds.IntersectsWith(x.Bounds) && PlayerMovement.IsLeft)
+                    {
+                        PlayerMovement.IsLeft = false;
+                        break;
+                    }
+                    
+                }
+            }
+            
         }
 
         private void OnKeyUp(object sender, KeyEventArgs e)
