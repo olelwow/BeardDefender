@@ -11,9 +11,11 @@ namespace BeardDefender.GameObjects
 
 
         private PictureBox pictureBox1;
-        private int speed = 3;
+        private int speed = 100;
+        
         private void InitializeComponent()
         {
+            
             components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             timer = new System.Windows.Forms.Timer(components);
@@ -55,19 +57,21 @@ namespace BeardDefender.GameObjects
 
         private void Update(object sender, EventArgs e)
         {
-            if (PlayerMovement.IsUp)
-            {
-                Top -= speed;
-            }
-            if (PlayerMovement.IsDown)
-            {
-                Top += speed;
-            }
-            if (PlayerMovement.IsLeft)
+            var screenHeight = ClientSize.Height;
+            var screenWidth = ClientSize.Width;
+            //if (PlayerMovement.IsUp && Top > 950)
+            //{
+            //    Top -= speed;
+            //}
+            //if (PlayerMovement.IsDown && Top < 1000)
+            //{
+            //    Top += speed;
+            //}
+            if (PlayerMovement.IsLeft && Left > 20)
             {
                 Left -= speed;
             }
-            if (PlayerMovement.IsRight)
+            if (PlayerMovement.IsRight && Left < 1790)
             {
                 Left += speed;
             }
