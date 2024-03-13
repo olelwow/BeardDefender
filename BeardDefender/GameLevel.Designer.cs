@@ -56,15 +56,16 @@
             ground1.Name = "ground1";
             ground1.Size = new Size(837, 100);
             ground1.TabIndex = 3;
+            ground1.Tag = "object";
             // 
             // tileCornerLeft1
             // 
             tileCornerLeft1.BackColor = Color.Transparent;
-            tileCornerLeft1.Location = new Point(532, 907);
+            tileCornerLeft1.Location = new Point(481, 912);
             tileCornerLeft1.Margin = new Padding(2, 3, 3, 3);
             tileCornerLeft1.Name = "tileCornerLeft1";
             tileCornerLeft1.RightToLeft = RightToLeft.No;
-            tileCornerLeft1.Size = new Size(69, 56);
+            tileCornerLeft1.Size = new Size(43, 45);
             tileCornerLeft1.TabIndex = 4;
             tileCornerLeft1.Tag = "object";
             // 
@@ -77,6 +78,20 @@
             groundTileFlat11.TabIndex = 5;
             groundTileFlat11.Tag = "object";
             // 
+            // addHp1
+            // 
+            addHp1.BackgroundImageLayout = ImageLayout.Zoom;
+            addHp1.Location = new Point(624, 918);
+            addHp1.Name = "addHp1";
+            addHp1.Size = new Size(36, 34);
+            addHp1.TabIndex = 6;
+            addHp1.Tag = "AddHp";
+            // 
+            // timer1
+            // 
+            timer1.Interval = 16;
+            timer1.Tick += timer1_Tick;
+            // 
             // Label_PlayerScore
             // 
             Label_PlayerScore.AutoSize = true;
@@ -87,20 +102,6 @@
             Label_PlayerScore.Size = new Size(110, 37);
             Label_PlayerScore.TabIndex = 6;
             Label_PlayerScore.Text = "Score: 0";
-            // 
-            // addHp1
-            // 
-            addHp1.BackgroundImageLayout = ImageLayout.Zoom;
-            addHp1.Location = new Point(379, 923);
-            addHp1.Name = "addHp1";
-            addHp1.Size = new Size(36, 34);
-            addHp1.TabIndex = 6;
-            addHp1.Tag = "AddHp";
-            // 
-            // timer1
-            // 
-            timer1.Interval = 16;
-            timer1.Tick += timer1_Tick;
             // 
             // GameLevel
             // 

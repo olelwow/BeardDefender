@@ -14,7 +14,7 @@ namespace BeardDefender.GameObjects
         private System.Windows.Forms.Timer timer;
         private System.ComponentModel.IContainer components;
         public int startingSpeed = 5;
-        private int speed;
+        //private int speed;
         private int score;
 
         public int speed = 15;

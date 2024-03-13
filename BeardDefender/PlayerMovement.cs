@@ -22,7 +22,7 @@ namespace BeardDefender
 
         public static void OnKeyDownMove(KeyEventArgs e, Player player)
         {
-            player.Speed = player.startingSpeed;
+            //player.Speed = player.startingSpeed;
             if (e.KeyCode == PlayerMovement.KeyUp)
             {
                 PlayerMovement.IsUp = true;
