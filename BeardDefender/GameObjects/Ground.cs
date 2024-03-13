@@ -8,7 +8,7 @@ namespace BeardDefender.GameObjects
 {
     public class Ground : UserControl
     {
-        public Ground() 
+        public Ground()
         {
             InitializeComponent();
         }
@@ -27,6 +27,7 @@ namespace BeardDefender.GameObjects
             pictureBox1.Size = new Size(891, 565);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Ground
             // 
@@ -39,5 +40,10 @@ namespace BeardDefender.GameObjects
         }
 
         private PictureBox pictureBox1;
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

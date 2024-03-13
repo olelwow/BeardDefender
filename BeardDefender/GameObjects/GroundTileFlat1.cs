@@ -29,6 +29,7 @@ namespace BeardDefender.GameObjects
             pictureBox1.Size = new Size(1021, 539);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // GroundTileFlat1
             // 
@@ -41,5 +42,10 @@ namespace BeardDefender.GameObjects
         }
 
         private PictureBox pictureBox1;
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

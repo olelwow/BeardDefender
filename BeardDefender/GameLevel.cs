@@ -14,10 +14,14 @@ namespace BeardDefender
 {
     public partial class GameLevel : Form
     {
-        private Player player;
         public GameLevel()
         {
             InitializeComponent();
+            gameTimer = new System.Timers.Timer();
+            gameTimer.Interval = 16;
+            gameTimer.Elapsed += GameTimer_Elapsed;
+            gameTimer.AutoReset = true;
+            gameTimer.Start();
             this.DoubleBuffered = true;
             player = player1;
         }
@@ -89,5 +93,68 @@ namespace BeardDefender
         {
             KeyPreview = true;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            CheckForCollisions();
+        }
+        private void GameTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (this.IsDisposed || !this.IsHandleCreated) return;
+
+            this.Invoke((MethodInvoker)delegate
+            {
+                CheckForCollisions();
+            });
+        }
+        private void CheckForCollisions()
+        {
+            Rectangle playerBounds = player1.Bounds;
+            Rectangle addHpBounds = addHp1.Bounds;
+
+            if (playerBounds.IntersectsWith(addHpBounds))
+            {
+                // player1.AddHp = 2;
+                player1.speed = 5;
+                Controls.Remove(addHp1);
+            }
+
+            Rectangle tileBounds = tileCornerLeft1.Bounds;
+            if (playerBounds.IntersectsWith(tileBounds))
+            {
+                if (PlayerMovement.IsRight)
+                {
+                    PlayerMovement.IsRight = false;
+                    player1.Location = new Point(player1.Location.X - 15, player1.Location.Y);
+                }
+                if (PlayerMovement.IsLeft)
+                {
+                    PlayerMovement.IsLeft = false;
+                    player1.Location = new Point(player1.Location.X + 15, player1.Location.Y);
+                }
+                if (PlayerMovement.IsUp)
+                {
+                    PlayerMovement.IsUp = false;
+                    player1.Location = new Point(player1.Location.X, player1.Location.Y + 15);
+                }
+                if (PlayerMovement.IsDown)
+                {
+                    PlayerMovement.IsDown = false;
+                    player1.Location = new Point(player1.Location.X, player1.Location.Y - 15);
+                }
+            }
+        }
+
+        private void GameLevel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+             base.OnFormClosing(e);
+            if (gameTimer != null)
+            {
+                gameTimer.Stop();
+                gameTimer.Elapsed -= GameTimer_Elapsed;
+                gameTimer.Dispose();
+            }
+        }
     }
+
 }
