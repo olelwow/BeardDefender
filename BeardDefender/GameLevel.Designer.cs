@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             player1 = new GameObjects.Player();
             ground1 = new GameObjects.Ground();
             tileCornerLeft1 = new GameObjects.TileCornerLeft();
             groundTileFlat11 = new GameObjects.GroundTileFlat1();
+            addHp1 = new GameObjects.AddHp();
+            timer1 = new System.Windows.Forms.Timer(components);
             Label_PlayerScore = new Label();
             SuspendLayout();
             // 
@@ -85,6 +88,20 @@
             Label_PlayerScore.TabIndex = 6;
             Label_PlayerScore.Text = "Score: 0";
             // 
+            // addHp1
+            // 
+            addHp1.BackgroundImageLayout = ImageLayout.Zoom;
+            addHp1.Location = new Point(379, 923);
+            addHp1.Name = "addHp1";
+            addHp1.Size = new Size(36, 34);
+            addHp1.TabIndex = 6;
+            addHp1.Tag = "AddHp";
+            // 
+            // timer1
+            // 
+            timer1.Interval = 16;
+            timer1.Tick += timer1_Tick;
+            // 
             // GameLevel
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -93,6 +110,7 @@
             ClientSize = new Size(1902, 1033);
             Controls.Add(player1);
             Controls.Add(tileCornerLeft1);
+            Controls.Add(addHp1);
             Controls.Add(groundTileFlat11);
             Controls.Add(ground1);
             MaximumSize = new Size(1920, 1080);
@@ -100,6 +118,7 @@
             Name = "GameLevel";
             Text = "GameLevel";
             WindowState = FormWindowState.Maximized;
+            FormClosing += GameLevel_FormClosing;
             Load += GameLevel_Load;
             KeyDown += OnKeyDown;
             KeyUp += OnKeyUp;
@@ -112,5 +131,7 @@
         private GameObjects.TileCornerLeft tileCornerLeft1;
         private GameObjects.GroundTileFlat1 groundTileFlat11;
         private Label Label_PlayerScore;
+        private GameObjects.AddHp addHp1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

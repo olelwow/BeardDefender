@@ -17,6 +17,8 @@ namespace BeardDefender.GameObjects
         private int speed;
         private int score;
 
+        public int speed = 15;
+        
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
