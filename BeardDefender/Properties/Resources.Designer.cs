@@ -173,6 +173,16 @@ namespace BeardDefender.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap igelkott {
+            get {
+                object obj = ResourceManager.GetObject("igelkott", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inre_jord_2 {
             get {
                 object obj = ResourceManager.GetObject("inre jord 2", resourceCulture);
