@@ -41,9 +41,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 2);
+            pictureBox1.Location = new Point(-9, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1920, 1080);
+            pictureBox1.Size = new Size(1930, 1080);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -59,7 +59,7 @@
             // 
             // Btn_Play
             // 
-            Btn_Play.Font = new Font("Stencil", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_Play.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_Play.Image = (Image)resources.GetObject("Btn_Play.Image");
             Btn_Play.Location = new Point(884, 562);
             Btn_Play.Name = "Btn_Play";
@@ -73,7 +73,7 @@
             // 
             // Btn_HighScore
             // 
-            Btn_HighScore.Font = new Font("Stencil", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_HighScore.Font = new Font("Microsoft Sans Serif", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_HighScore.Image = (Image)resources.GetObject("Btn_HighScore.Image");
             Btn_HighScore.Location = new Point(837, 722);
             Btn_HighScore.Name = "Btn_HighScore";
@@ -87,7 +87,7 @@
             // 
             // Btn_exitGame
             // 
-            Btn_exitGame.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Btn_exitGame.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btn_exitGame.Image = (Image)resources.GetObject("Btn_exitGame.Image");
             Btn_exitGame.Location = new Point(837, 877);
             Btn_exitGame.Name = "Btn_exitGame";
@@ -102,7 +102,7 @@
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1904, 1033);
             Controls.Add(Btn_exitGame);
             Controls.Add(Btn_HighScore);
             Controls.Add(Btn_Play);
